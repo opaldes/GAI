@@ -1,0 +1,94 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+\usepackage[german]{babel}
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Anwendungsmöglichkeiten für BCIs in nicht-medizinischen Bereichen}
+\author{Jeremy Etienne Seipelt}
+\date{31.5.2018} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{Einleitung}
+BCIs werden mit großem Fokus auf die Medizin/Neurowissenschaften entwickelt\footnote{Aussage wurde allein über die Anzahl an Artikel, denen ein starker Fokus im med./neur. Bereich anhand des Titels anzusehen ist, die die BBCI unter den Publikationen auflistet. Alle Publikationen die für diese Arbeit verwendet wurden sind unter http://bbci.de/publications.html aufgelistet.}. Bereits heute sind rudimentäre Prothesen mit intrusiven Methoden möglich sowie das Auslesen/Übertragen von Gehirnwellen mit dem weniger intrusiven Berlin BCI\cite{FEHLT}. Dabei werden mit verschiedenste Methoden unterschiedliche Gehirnaktivitäten ausgelesen und für die Weiterverarbeitung am Computern vorbereitet.\\ Der Fokus dieser Arbeit liegt auf einem Überblick der Anwendungsmöglichkeit außerhalb der Medizin und Neurowissenschaft. Dabei geht es in dieser Arbeit um die folgenden zwei Gebiete, Datengewinnung, Peripherie. Diese Arbeit soll nur eine Übersicht der derzeitigen Arbeiten an den genannten Gebieten geben, deshalb wird kein moralisches Urteil über die vorgestellten Methoden/Einsatzmöglichkeiten ein Teil dieser Arbeit sein. Zu jedem Bereich wird im jeweiligen Bereiche vorstellbare, jedoch nicht im Umfang der Recherche gefundenen, Anwedungen angegeben. 
+\subsection{Derzeitiger Fokus der Medizin und Neurowissenschaften}
+-Algorithmen verbesserung
+-Einsatzmöglichkeiten von Machine Learning 
+-Datenanalyse
+-Wissenschaft Datengewinnung für die 
+\section{Datengewinnung}
+Unter allgemeinen Datenverwendung ist im Verlauf der Arbeit alle Anwendungsgebiete gesammelt, bei der die Daten des BCIs  ausgewertet weden um Entscheidungen zu fällen oder einen Datensatz zu erstellen.  
+\subsection{Entscheidungshilfe}
+In dem Artikel ''Implicit relevance feedback from electroencephalography and eye tracking in image search'' der sich mit der Realisation von gedankenunterstützem Navigieren über Suchergebnisse von Suchmachinen für Bilder beschäftigt, spricht man von der Möglichkeit mithilfe des Gehirns die subjektive Relevanz der einzelnen Ergebnisse herauszufiltern. Ein weiterer Teil der Arbeit ist die Untersuchung ob Eye Tracking im verbund mit dem BCI ein besseres Ergebniss erzielt als jeweils für sich.
+Hierbei wird mithilfe eines BCIs bei einer Suche nach einem Begriff, der sich in zwei Kategorien einteilen lässt, die Ergebnisse der gesuchten Kategorie anhand der Signale des BCIs klar von anderen Ergebnissen abhebt. Die Präzesion des BCIs alleine lag bei  $76.9\% \pm 8.7\% $.
+\subsubsection{Neuromarketing}
+Im Artikel ... wird das Wort "Neuromarketing" genannt ohne weiter darauf einzugehen. Die Idee hinter Neuromarketing ist das durch zbs. BCIs von Konsumenten noch weitere Informationen sammeln lässt.  In einem Artikel ... wird gesagt das Neuromarketing sich mit den "neuronalen Grundlagen
+von ökonomischen Paradigmen beschäftigt", führt aber weiter aus das die Wissenschaft sich noch uneinig ist was man alles unter den Begriff des Neuromarketing zusammenfasst. Da die Verwendung von BCIs jedoch die Kosten von Marketingmaßnahmen erhöhen wird davon ausgegangen das diese nicht in näherer Zukunft angewandt werden. 
+\subsubsection{Qualitätssicherung}
+Die BCIs erlauben uns in der Qualitätssicherung Eigenschaften zu testen ohne einen Probanden zu befragen, so wird von Arndt behauptet das die Daten des BCIs unterschiedlich bei dem selben Bild in unterschiedlicher Qualität ist. Diese Eigenschaft ließe sich dann auf andere Arten der Qualitätsicherung Anwenden um neue Kriterien der Qualitätssicherung zu erstellen, und neben bereits etablierten Methoden komplementär zum einsatz kommen.   
+\subsection{Benutzerstatus}
+Wenn man von User State spricht so spricht man von dem derzeitigen Status des grade untersuchtem Probanden. Anhand von User States soll man in Zukunft in vielen Bereichen den derzeitige Status mithilfe on BCIs messen können um anhand der Werte bestimmte Entscheidungen zu treffen. Als Beispiel wird die "Schläfrigkeit" eines Autofahrers genannt bei dem die BCI messwerte komplementär mit einem Pulsmesser benutzt werden könnte. Somit kann davon ausgegangen werden das in vielen Gebieten wo man durch Messen von Körperaktivität auf den Status des Probanden schließen will, ein BCI sich neben den Standard Messmethoden einsetzten lässt. Nennenswert wäre ein Lügendetektor, oder aber auch eine neue Form des Intilligenztestes der auf die Aktivität des Hirns wärend der Beantwortung eingeht anstatt nur die Ergebnisse auszuwerten.
+\subsubsection{Pädagogisch Anwendungen}
+Die Lehrnerfolge bestimmter Lehrmethoden könnten bereits während des Lehrens gemessen werden und auch welche Regionen des Gehirns bei einer Methode besonders gefördert wird. Dabei wird in `Beyond Medical Applications` sowohl auf den ganzen Bereich akzeptierter Lerhmethoden als auch von individuelle Lehrziele gesprochen.
+Im schulischem Bereich könnten auch in Klausursituationen gemessen werden ob gelerntes Angewandt oder auswendig Niedergeschrieben wird, um auf die Effektivität des Unterrichtes und die Vorbereitung der Schüler zu schließen.
+\subsubsection{Arbeitswelt}
+In sowohl `Beyond` als auch von ... genannte Einsatzmöglichkeit des BCIs ist auch die Arbeitswelt. Heir kann mentale Belastung präzisiert und die Arbeitslast ggf. verringert werden.
+In dem durchgeführtem Experiment wurden Autofahrende zwei weiteren Aufgaben gegeben wobei anhand von Daten auf die mentale Belastung des Subjekts zu schließen. Dabei ist die zweite Aufgabe  um einiges 
+\section{Peripherie}
+
+\begin{thebibliography}{xxxxxxxxxxxxxxxxxxx}
+   \bibitem[BMBF, 2003]{bmbf}"'IT-Ausstattung der allgemein bildenden und berufsbildenden Schulen in Deutschland"', http://www.schulen-ans-netz.de/neuemedien/fakten/dokus/it-ausstattung-2003.pdf, 10.03.2005
+\end{thebibliography}
+\end{document}
